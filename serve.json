@@ -1,8 +1,10 @@
 {
-  "baseUrl": "http://localhost:5000",
-  "fixturesFolder": false,
-  "supportFile": false,
-  "pluginsFile": false,
-  "integrationFolder": "cypress/serve",
-  "$schema": "https://on.cypress.io/cypress.schema.json"
+  "public": "app",
+  "headers": [{
+    "source": "**/*",
+    "headers": [{
+      "key": "Cache-Control",
+      "value": "no-cache"
+    }]
+  }]
 }
